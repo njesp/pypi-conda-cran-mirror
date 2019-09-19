@@ -1,5 +1,7 @@
 #!/usr/bin/bash
-/usr/bin/python3 /home/niels/.local/bin/bandersnatch --config /home/niels/bsn/bsn.conf  mirror  1> /home/niels/bsn/log.txt 2>&1
-#/usr/bin/rsync -rtvP /datadrev /media/niels/ntfsdrev1 1> /home/niels/bsn/rsynclog.txt 2>&1
+cd ~/bsn
+/usr/bin/python3 ~/.local/bin/bandersnatch --config ~/bsn/bsn.conf  mirror  1> ~/bsn/log.txt 2>&1
+# Fjern filer med : i navnet. Dem bryder Windows sig virkelig ikke om. 
+find /datadrev/pypi -type f -name ":" -exec rm -f {};
 #
 
