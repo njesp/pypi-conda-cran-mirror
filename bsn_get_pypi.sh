@@ -1,9 +1,8 @@
 #!/usr/bin/bash
-# pip install bandersnatch
+# pip3 install bandersnatch
 # kør dette script. Vent et par dage
 cd ~/bsn
-/usr/bin/python3 ~/anaconda3/bin/bandersnatch --config ~/bsn/bsn.conf  mirror  1> ~/bsn/log.txt 2>&1
+~/.local/bin/bandersnatch --config ~/bsn/bsn.conf  mirror  1> ~/bsn/log.txt 2>&1
 # Fjern filer med : i navnet. Dem bryder Windows sig virkelig ikke om. 
-find /datadrev/pypi -type f -name ":" -exec rm -f {};
+find /datadrev/pypi -type f -name ":" -exec rm -f {}; 1>> ~/bsn/log.txt 2>>&1
 #
-
