@@ -1,12 +1,12 @@
 #!/usr/bin/bash
-mkdir /datadrev/cran/bin/windows
-mkdir /datadrev/cran/contrib
-mkdir /datadrev/cran/doc
-mkdir /datadrev/cran/help
-mkdir /datadrev/cran/html
-mkdir /datadrev/cran/mirmon
-mkdir /datadrev/cran/src
-mkdir /datadrev/cran/web
+mkdir -p /datadrev/cran/bin/windows
+mkdir -p /datadrev/cran/contrib
+mkdir -p /datadrev/cran/doc
+mkdir -p /datadrev/cran/help
+mkdir -p /datadrev/cran/html
+mkdir -p /datadrev/cran/mirmon
+mkdir -p /datadrev/cran/src
+mkdir -p /datadrev/cran/web
 
 rsync -rtlzv --delete cran.r-project.org::CRAN/bin/windows /datadrev/cran/bin/windows 1> ~/bsn/cran_log.txt 2>~/bsn/cran_log.txt
 rsync -rtlzv --delete cran.r-project.org::CRAN/contrib /datadrev/cran/contrib 1>> ~/bsn/cran_log.txt 2>>~/bsn/cran_log.txt
