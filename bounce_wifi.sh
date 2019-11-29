@@ -4,7 +4,7 @@
 # Altså: 
 # sudo -s
 # crontab -e 
-# tast i bunden og gem: 0 * * * * /home/niels/projs/pypi-conda-cran-mirror/bounce_wifi.sh
+# tast i bunden og gem: 0 * * * * /home/niels/bsn/bounce_wifi.sh
 # kontroller crontab -l
 # exit root prompt
 # check at der kommer en fil /tmp/wifibounced.txt, som ændres hver time
