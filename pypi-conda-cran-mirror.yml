@@ -1,0 +1,5 @@
+name: pypi-conda-cran-mirror
+dependencies:
+  - python=3.8.2
+  - pip=20.0.2
+  - bandersnatch=3.6.0
