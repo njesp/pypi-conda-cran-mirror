@@ -11,8 +11,12 @@ Det er hurtigere anden gang, meget. Bare kør oveni.
 # Build
 
 mkdir ~/bsn
+
 cp * ~/bsn
+
 cd ~/bsn
+
 conda env update -f pypi-conda-cran-mirror.yml
+
 conda acticate pypi-conda-cran-mirror
-#
+
